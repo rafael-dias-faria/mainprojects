@@ -1,0 +1,17 @@
+<br> - aumentar o numero de linhas
+&nbsp; - aumentar o numero de espaco entre as palavras
+<wbr> - quebrar grandes palavras no fim de frase
+&shy; - colocar hyfen na quebra de palavras no fim da frase
+
+Simbolos Especiais
+&lt; >
+&gt; <
+&le; >=
+&ge; <=
+&plusmn; +-
+&times; x
+&larr; <-
+&rarr; ->
+<code> e <pre> - para mostrar codigos com a formataçao feita no codigo, preservando a formatação.
+
+<link rel="stylesheet" type="text/css" href="local onde está o arquivo"

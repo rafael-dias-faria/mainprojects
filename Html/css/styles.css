@@ -1,0 +1,281 @@
+@charset="utf-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+/**@font-face {
+	font-family: 'fontlogo';
+	src: url("../fonts/indieflowerregular.ttf");
+}
+**/
+
+
+p{	
+	font-family: sans-serif;
+	text-align: justify;
+	text-indent: 5px;
+	color: black;
+}
+
+a{
+	color: #606060;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+h1{
+	font-family: arial;
+	color: #606060;
+	font-size: 30pt;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+
+h2{
+	color: black;
+}
+
+h3{
+	font-family: arial;
+	color: gray;
+	font-size: 15pt;
+	text-align: left;
+}
+
+h4{
+	margin-top: 0px;
+	color: gray;
+	padding: 0px;
+}
+	
+h5{
+	text-align: right;
+
+}
+
+div#interface {
+	width: 950px;
+	background-color: #ffffff;
+	margin: -20px auto 10px 0px auto 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 10px 10px 10px 10px;
+}
+
+header#cabecalho img#icone {
+	position: absolute;
+	left: 780px;
+	top: 10px;
+}
+
+header#cabecalho{
+	border-bottom: 1px #606060 dotted;
+	height: 150px;
+	background: url("../img/logo.png") no-repeat 0px 0px;
+}
+
+header#cabecalho h1{
+	font-family: arial, sans-serif;
+	font-size: 30px;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif;
+	color: #888888;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: 5px;
+}
+
+/* Formataçao de Imagens com Legenda */
+
+figure.foto-legend {
+
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+}
+			
+figure.foto-legend img {
+
+	width: 100%;
+	height: 100%;
+
+}
+
+figure.foto-legend figcaption {
+	opacity: 0;
+	position: absolute;
+	top:0px;
+	background-color: rgba(0,0,0,.4);
+	color: rgb(255,255,255);
+	width:100%;
+	height:100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+
+figure.foto-legend:hover figcaption{
+	opacity: 1;
+}
+
+/* Formatacao do Menu*/
+
+nav#menu {
+
+	display: block;
+}
+
+nav#menu ul {
+	
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 300px;
+
+}
+
+nav#menu li {
+
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+nav#menu li:hover {
+	
+	background-color: #606060;
+	text-decoration: none;
+}
+
+nav#menu h1 {
+
+	display: none;
+}
+
+nav#menu a {
+	color: #000000;
+	text-decoration: none;
+}
+
+nav#menu a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+section#corpo{
+	display: block;
+	width: 500px;
+	float: left;
+	border-right: 1px solid black;
+	padding: 10px;
+}
+
+article#noticia-principal h2{
+		font-size: 12pt;
+		color: #606060;
+		background-color: #dddddd;
+		padding: 5px 0px 5px 10px;
+		margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-article h1{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+header#cabecalho-article h2{
+	font-size: 13pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+}
+
+table#tableespec{
+	border: 1px solid white;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tableespec td{
+	border: 1px solid white;
+	padding: 10px;
+	text-align: left;
+}
+
+table#tableespec td.ce{
+	text-align: right;
+	color: white;
+	background-color:#606060;
+	vertical-align: top;
+	border: 1px solid #606060;
+	font-weight: bold;
+}
+
+table#tableespec td.cd{
+	text-align: left;
+	background-color: #cecece;
+	vertical-align: top;
+	border: 1px solid #cecece;
+	font-weight: bold;
+}
+
+table#tableespec caption{
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+table#tableespec caption span{
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 5px;
+}
+
+aside#lateral{
+	display: block;
+	width: 400px;
+	float: right;
+	padding: 10px;
+	background-color: #dddddd;
+	margin-top: 10px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+
+}
+
+aside#lateral h2{
+		background-color: #606060;
+		font-size: 13pt;
+		color: #ffffff;
+		padding: 5px;
+}
+
+footer#rodape{
+	clear: both;
+	border-top: 1px solid black;
+}
+
+footer#rodape p{
+	text-align: center;
+}

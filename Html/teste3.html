@@ -1,0 +1,83 @@
+/** MANEIRA 1/ ----------------------------------------
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title> Teste JavaScript </title>
+		<meta charset="utf-8">
+
+		<script> 
+			function acendelampada() {
+
+				document.getElementById("luz").src = "img/lampadaacesa.jpg";
+
+			}
+
+			function apagalampada() {
+				document.getElementById("luz").src = "img/lampadaapagada.png";
+			}
+
+			function quebralampada() {
+				document.getElementById("luz").src = "img/lampadaquebrada.png";
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<h1>Acenda a Lampada</h1>
+		<img src="img/lampadaapagada.png" id="luz" onmousemove="acendelampada()" onmouseout="apagalampada()" onclick="quebralampada()"/> 
+	
+	</body>
+
+</html>
+
+/** MANEIRA 2**/ -------------------------------------
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title> Teste JavaScript </title>
+		<meta charset="utf-8">
+
+		<script> 
+
+			var quebrada = false;
+			function mudalampada(tipo) {
+				if (tipo == 1) {
+					arquivo = "img/lampadaacesa.jpg";
+				}
+				if (tipo == 2) {
+					arquivo = "img/lampadaapagada.png";
+				}	
+				if (tipo == 3) {
+					arquivo = "img/lampadaquebrada.png";	
+				}
+
+				if (!quebrada) {
+					document.getElementById("luz").src = arquivo;
+					if (tipo == 3) {
+						quebrada = true;
+					}
+				}
+
+			}
+
+			
+		</script>
+
+	</head>
+
+	<body>
+		<h1>Acenda a Lampada</h1>
+		<img src="img/lampadaapagada.png" id="luz" onmousemove="mudalampada(1)" onmouseout="mudalampada(2)" onclick="mudalampada(3)"/> 
+	
+	</body>
+
+</html>
